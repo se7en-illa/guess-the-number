@@ -62,11 +62,11 @@ submit.addEventListener("click", function () {
 // HINT BUTTON
 const shuffle = (arr) => arr.sort((a, b) => Math.random() - Math.random());
 
-let hintcount = 0;
+let count = 0;
 hint.addEventListener("click", () => {
   let hint = [winningNumber, generateWinningNumber(), generateWinningNumber()];
 
-  if (hintcount === 1) {
+  if (count === 1) {
     output.innerHTML = "You already got a hint!";
   } else {
     count++;
