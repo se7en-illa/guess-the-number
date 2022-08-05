@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <h1>GUESSING GAME</h1>
+    <!-- -------------------------------------------- -->
+    <div id="container1">
+      <p>Guess a number between 1 and 100.</p>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div id="container2">
+      <section class="message-list">
+        <section class="message -right">
+          <!-- Balloon -->
+          <div class="nes-balloon from-right" id="balloon">
+            <p id="outputtext">Enter a number below.</p>
+          </div>
+          <!-- <i class="nes-octocat animate" id="octocat"></i> -->
+        </section>
+      </section>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div id="container3">
+      <div class="nes-field is-inline">
+        <input
+          type="text"
+          id="userInput"
+          class="nes-input is-success"
+          placeholder="INPUT NUMBER HERE"
+        />
+        <i class="nes-octocat animate" id="octocat"></i>
+      </div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div id="container4">
+      <div class="guessnum">
+        <button type="button" class="nes-btn is-primary" id="submit">
+          Submit Guess
+        </button>
+      </div>
+      <div class="hint">
+        <button type="button" class="nes-btn is-success" id="hint">Hint</button>
+      </div>
+      <div class="reset">
+        <button type="button" class="nes-btn is-error" id="reset">
+          Reset Game
+        </button>
+      </div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <h2 class="guessed-header">GUESSED NUMBERS</h2>
+    <!-- -------------------------------------------- -->
+    <div id="container5">
+      <table class="nes-table is-bordered is-centered">
+        <tr>
+          <td id="guess1" class="nes-text is-primary">GUESS1 X</td>
+          <td id="guess2" class="nes-text is-primary">GUESS2 X</td>
+          <td id="guess3" class="nes-text is-primary">GUESS3 X</td>
+          <td id="guess4" class="nes-text is-primary">GUESS4 X</td>
+          <td id="guess5" class="nes-text is-primary">GUESS5 X</td>
+        </tr>
+      </table>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="progress-bar" id="progress">
+      <progress
+        class="nes-progress is-error"
+        id="bar"
+        value="0"
+        max="50"
+      ></progress>
+    </div>
+    <!-- -------------------------------------------- -->
+    <!-- <div id="footer">
+      <section class="icon-list">
+        <i class="nes-mario"></i>
+        <i class="nes-ash"></i>
+        <i class="nes-pokeball"></i>
+        <i class="nes-bulbasaur"></i>
+        <i class="nes-charmander"></i>
+        <i class="nes-squirtle"></i>
+        <i class="nes-kirby"></i>
+      </section>
+    </div> -->
+    <!-- -------------------------------------------- -->
+    <script src="main.js"></script>
+  </body>
+</html>
