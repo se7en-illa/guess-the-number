@@ -19,11 +19,9 @@ const generateWinningNumber = () => Math.ceil(Math.random() * 100);
 // WINNING NUMBER
 const winningNumber = generateWinningNumber();
 
-let submitcount = 0;
-
-const pastGuesses = [];
-
 // SUBMIT BUTTON
+let submitcount = 0;
+const pastGuesses = [];
 
 submit.addEventListener("click", function () {
   let input = document.getElementById("userInput").value;
@@ -63,11 +61,12 @@ submit.addEventListener("click", function () {
 
 // HINT BUTTON
 const shuffle = (arr) => arr.sort((a, b) => Math.random() - Math.random());
-let count = 0;
+
+let hintcount = 0;
 hint.addEventListener("click", () => {
   let hint = [winningNumber, generateWinningNumber(), generateWinningNumber()];
 
-  if (count === 1) {
+  if (hintcount === 1) {
     output.innerHTML = "You already got a hint!";
   } else {
     count++;
